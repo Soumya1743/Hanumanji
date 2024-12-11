@@ -1,0 +1,189 @@
+#header {
+    width: 100%;
+    border: 1px solid #eb4a00;
+    border-radius: 5px;
+    background-color: #eb4a00;
+    color: white;
+}
+#header1, #header1_disable {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px black;
+    border: none;
+    border-radius: 5px;
+}
+#header1_disable {
+    display: none;
+}
+#translate_button {
+    background-color: white;
+    color: #eb4a00;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    margin-top: 1.8rem;
+}
+#header2 {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+#navigation {
+    display: inline-block;
+}
+#header2_disable {
+    display: none;
+}
+#manthra {
+    font-size: 1.5rem;
+    text-align: center;
+}
+#hanuman_logo {
+    width: 7rem;
+    border-radius: 50%;
+}
+#navigation {
+    padding: 2.2rem 0rem;
+}
+#anchors {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.2rem;
+    margin: 0rem 1.5rem;
+}
+#anchors:hover {
+    border-bottom: 3px solid rgb(1, 24, 74);
+    border-top: 3px solid white;
+    transition: all 0.2s ease-in-out;
+    color: rgb(1, 24, 74);
+}
+
+
+/* Main Body */
+
+#image {
+    width: 100%;
+}
+#first {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+#heading {
+    font-size: 2.5rem;
+    padding-top: 6rem;
+}
+#ithihas {
+    width: 50%;
+    text-align: justify;
+}
+#content {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #eb4a00;
+}
+
+
+#second {
+    padding: 0rem 6rem 1rem 6rem;
+    background-color: #eb4a00;
+    color: white;
+    line-height: 2rem;
+    text-align: center;
+}
+#flow_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding-top: 2rem;
+}
+#flow {
+    width: 15rem;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px black;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    #header1 {
+        display: none;
+    }
+    #header1_disable {
+        display: block;
+    }
+    #anchors {
+        margin: 0rem 0.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+    #first {
+        flex-wrap: wrap-reverse;
+    }
+    #heading {
+        text-align: center;
+    }
+    #ithihas {
+        width: 80%;
+    }
+    #hanuman_image {
+        text-align: center;
+    }
+    #body_image {
+        width: 80%;
+    }
+    #heading {
+        padding-top: 1rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 760px) {
+    #header2_1 {
+        display: none;
+    }
+    #header2_disable {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 0.7rem;
+    }
+    #disable_div {
+        float: right;
+        padding-top: 1rem;
+    }
+    #translate_button {
+        display: none;
+    }
+    #translate_button_disable {
+        background-color: white;
+        color: #eb4a00;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 6px;
+        margin-top: 0.8rem;
+    }
+    #hanuman_logo {
+        width: 5rem;
+    }
+    #body_image {
+        width: 40%;
+    }
+    #second {
+        padding: 0rem 1rem 1rem 1rem;
+    }
+    #flow_images {
+        padding-top: 1rem;
+    }
+    #flow {
+        width: 10rem;
+    }
+}
+
+
+
