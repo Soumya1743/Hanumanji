@@ -185,5 +185,11 @@
     }
 }
 
+@media (max-width: 370px) {
+    #flow {
+        width: 8rem;
+    }
+}
+
 
 
