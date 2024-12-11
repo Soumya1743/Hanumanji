@@ -1,3 +1,8 @@
+body {
+    background-image: url('Resources/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
 #header {
     width: 100%;
     border: 1px solid #eb4a00;
@@ -86,10 +91,10 @@
 }
 
 
-#second {
+#second, #third {
     padding: 0rem 6rem 1rem 6rem;
-    background-color: #eb4a00;
-    color: white;
+    color: black;
+    font-weight: 1000;
     line-height: 2rem;
     text-align: center;
 }
@@ -105,6 +110,20 @@
     width: 15rem;
     border-radius: 10px;
     box-shadow: 6px 6px 10px black;
+}
+
+#third {
+    padding-top: 4rem;
+}
+#third_heading {
+    padding-bottom: 2rem;
+}
+#third_block {
+    display: flex;
+    justify-content: center;
+    column-gap: 6rem;
+    font-weight: 400;
+    
 }
 
 
@@ -141,6 +160,12 @@
     #heading {
         padding-top: 1rem;
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    #third_block {
+        flex-wrap: wrap;
     }
 }
 
@@ -182,6 +207,16 @@
     }
     #flow {
         width: 10rem;
+    }
+}
+
+@media (max-width: 450px) {
+    #third {
+        font-size: 0.7rem;
+        padding: 0;
+    }
+    #third_block {
+        padding: 0rem;
     }
 }
 
